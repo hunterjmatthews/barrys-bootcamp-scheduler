@@ -1,7 +1,7 @@
 name: Class Scheduler
 on:
   schedule:
-    - cron: '0 12 * * *'  # Schedule to run every day at 12:00 PM UTC
+    - cron: '0 12 * * *'  # Schedule to run every day at 12:00 PM CST.
 
 jobs:
   execute_task:
