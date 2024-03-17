@@ -1,0 +1,21 @@
+name: Class Scheduler
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Schedule to run every day at 12:00 PM UTC
+
+jobs:
+  execute_task:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Specify the Python version
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Execute task
+      run: |
+        python main.py  # Replace with the name of your Python script
+
