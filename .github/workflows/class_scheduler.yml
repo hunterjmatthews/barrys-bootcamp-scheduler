@@ -1,7 +1,5 @@
 name: Class Scheduler
-on:
-  schedule:
-    - cron: '0 12 * * *'  # Schedule to run every day at 12:00 PM CST.
+on: workflow_dispatch
 
 jobs:
   execute_task:
