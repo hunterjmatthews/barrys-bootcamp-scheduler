@@ -22,5 +22,6 @@ jobs:
 
     - name: Execute task
       run: |
-        python main.py  # Replace with the name of your Python script
+        python main.py ${{ secrets.USERNAME }} ${{ secrets.PASSWORD }}  # Pass secrets as arguments
+
 
